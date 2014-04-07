@@ -13,9 +13,11 @@ public class MainMenu : MonoBehaviour
 		GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), background);
 
 		// Draw button
-		if (GUI.Button (new Rect ((float)(Screen.width * 0.60), (float)(Screen.height * 0.60), (float)(Screen.width + play.width), (float)(Screen.height + play.height)), play,"")) 
-			{
-				//go to next screen
-			}
+		if (GUI.Button (new Rect ((float)(Screen.width * 0.60), (float)(Screen.height * 0.60), (float)(Screen.width + play.width), (float)(Screen.height + play.height)), play, "")) 
+		{
+			Application.LoadLevel ("LevelSelect");
+		}
+
+
 	}
 }
